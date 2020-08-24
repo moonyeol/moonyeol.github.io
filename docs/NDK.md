@@ -1,13 +1,3 @@
----
-layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
----
-
 # 안드로이드 기본 개념
 
 ### NDK란
