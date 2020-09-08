@@ -1,3 +1,14 @@
+---
+layout: post
+title: 소프트웨어 공학 기본-1
+subtitle: 
+gh-repo: 
+gh-badge: [star, fork, follow]
+tags: 소프트웨어 공학
+categories : SW_engineering
+comments: true
+---
+
 > 모듈화 (Modularity)
 
 - 정의

@@ -5,12 +5,12 @@
 {% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
 
-<div class="category_box animated fadeIn">
+<div class="category_box">
     <h2> CATEGORY </h2>
-    <ul>
+    <ul class="categry_ul">
         {% for item in (0..site.categories.size) %}{% unless forloop.last %}
         {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-        <li><a href=" {{site.url}}/categories/{{this_word | strip }} "> {{ this_word }} </a></li>
+        <li class="categry_li"><a href=" {{site.url}}/categories/{{this_word | strip }} "> {{ this_word }} </a></li>
         <br/>
         {% endunless %}{% endfor %}
     </ul>

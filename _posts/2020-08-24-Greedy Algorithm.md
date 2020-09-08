@@ -1,3 +1,14 @@
+---
+layout: post
+title: Greedy Algorithm
+subtitle: 
+gh-repo: 
+gh-badge: [star, fork, follow]
+tags: 알고리즘
+categories : algorithm
+comments: true
+---
+
 # 탐욕 알고리즘 (Greedy Algorithm)
 
 그리디 알고리즘은 **동적 프로그래밍** 사용 시 지나치게 많은 일을 한다는 것에서 착안하여 고안된 알고리즘입니다. 동적 프로그래밍을 대체하는 것은 아니고 같이 쓰이며 서로 보완하는 개념입니다.
