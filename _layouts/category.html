@@ -1,0 +1,98 @@
+---
+layout: page
+---
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+
+
+<!-- Header -->
+    <div class="post_wrapper animated fadeIn">
+        <div class="content">
+
+            <div class="post-list">
+                {% assign category = page.title %}
+                {% for post in site.categories[category] %} <!-- 카테고리 조건 -->
+                <article class="post-preview">
+                    <a href="{{ post.url | absolute_url }}">
+                        <h2 class="post-title">{{ post.title }}</h2>
+
+                        {% if post.subtitle %}
+                        <h3 class="post-subtitle">
+                            {{ post.subtitle }}
+                        </h3>
+                        {% endif %}
+                    </a>
+
+                    <p class="post-meta">
+                        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                        Posted on {{ post.date | date: date_format }}
+                    </p>
+
+                    <div class="post-entry-container">
+                        {%- capture thumbnail -%}
+                        {% if post.thumbnail-img %}
+                        {{ post.thumbnail-img }}
+                        {% elsif post.cover-img %}
+                        {% if post.cover-img.first %}
+                        {{ post.cover-img[0].first.first }}
+                        {% else %}
+                        {{ post.cover-img }}
+                        {% endif %}
+                        {% else %}
+                        {% endif %}
+                        {% endcapture %}
+                        {% assign thumbnail=thumbnail | strip %}
+                        {% if thumbnail != "" %}
+                        <div class="post-image">
+                            <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+                            </a>
+                        </div>
+                        {% endif %}
+                        <div class="post-entry">
+                            {% assign excerpt_length = site.excerpt_length | default: 50 %}
+                            {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
+                            {% assign excerpt_word_count = post.excerpt | number_of_words %}
+                            {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
+                            <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if post.tags.size > 0 %}
+                    <div class="blog-tags">
+                        Tags:
+                        {% for tag in post.tags %}
+                        <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                </article>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- 카테고리 -->
+    {% include categorybox.html %}
+
+
+
+{% include scripts.html %}
+
+<script src="{{ site.url }}/assets/js/wow.min.js"></script>
+<script type="text/javascript">(new WOW).init();</script>
+
+
+
+<!-- 카테고리
+{% for post in site.categories[page.category] %}
+    <a href="{{ post.url | absolute_url }}">
+      {{ post.title }}
+    </a>
+{% endfor %}
+-->

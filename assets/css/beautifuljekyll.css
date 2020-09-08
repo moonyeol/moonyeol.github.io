@@ -108,6 +108,23 @@ img {
   max-width: 100%;
 }
 
+
+.category_box {
+  position: fixed;
+  top: 8rem;
+  left: 1rem;
+  width: 25%;
+  background: #fff;
+  color: #383838;
+  padding: 2em;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(#282828,0.3);
+
+@media #{$small} {
+  visibility: hidden;
+}
+}
+
 .disqus-comments {
   margin-top: 1.875rem;
 }
@@ -604,13 +621,14 @@ footer .footer-custom-content {
   margin-top: 0;
   font-size: 3.125rem;
 }
+
 .intro-header .post-heading h1 {
   margin-top: 0;
   font-size: 2.1875rem;
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 1.6875rem;
+  font-size: 1.2875rem;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -655,8 +673,9 @@ footer .footer-custom-content {
     padding: 9.375rem 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
+
   .intro-header .post-heading h1 {
     font-size: 3.125rem;
   }
