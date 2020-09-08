@@ -134,6 +134,8 @@ color: {{ site.hover-col | default: "#0085A1" }};
 .categry_ul {
   font-size: 1.2rem;
   line-height: 0.9em;
+  list-style:circle ;
+
 }
 
 .categry_li {
