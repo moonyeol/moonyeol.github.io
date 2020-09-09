@@ -110,17 +110,29 @@ img {
 
 
 .category_box {
-  position: fixed;
+  position: fixed;;
   top: 8rem;
   left: 1rem;
-  width: 17%;
+  width: 18%;
   background: #fff;
   color: #383838;
   padding: 2em;
   border-radius: 1px;
   box-shadow: 0 0 10px 0 rgba(40,40,40,0.2);
+  height: auto;
 
   }
+@media (max-width: 1300px){
+  .category_box {
+    position: relative;
+    position: marker;
+    width: 100%;
+    left : 0rem;
+    top: auto;
+    bottom: -1rem;
+  }
+}
+
 .category_box a {
   text-decoration: none;
 color: {{ site.text-col | default: "#404040" }};
@@ -135,6 +147,7 @@ color: {{ site.hover-col | default: "#0085A1" }};
   font-size: 1.2rem;
   line-height: 0.9em;
   list-style:circle ;
+
 
 }
 
