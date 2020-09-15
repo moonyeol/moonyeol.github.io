@@ -19,7 +19,7 @@ comments: true
   \- 모듈의 독립성
   \- 적정한 모듈의 수 유지가 관건
 
-![sw_engineering](C:\Users\ansdu\Downloads\sw_engineering.png)
+![sw_engineering](..\assets\post_img\sw_engineering.png)
 
 모듈의 수와 비용+노력의 상관관계 그래프
 
@@ -33,7 +33,7 @@ comments: true
 
 ![Image for post](https://miro.medium.com/max/60/0*VzcKuLZHvJzFd_6Q?q=20)
 
-![sw_engineering2](C:\Users\ansdu\Downloads\sw_engineering2.jpg)
+![sw_engineering2](..\assets\post_img\sw_engineering2.jpg)
 
 ```
 결합도순서(약함 -> 강함)
@@ -55,7 +55,7 @@ comments: true
 
 ![Image for post](https://miro.medium.com/max/60/0*pXuItGd0WkYZsUji?q=20)
 
-![sw_engineering3](C:\Users\ansdu\Downloads\sw_engineering3.jpg)
+![sw_engineering3](..\assets\post_img\sw_engineering3.jpg)
 
 ```
 응집도순서(강함 -> 약함)
