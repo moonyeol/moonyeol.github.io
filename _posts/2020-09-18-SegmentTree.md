@@ -25,7 +25,7 @@ comments: true
 
 ![segmentTree1](..\assets\post_img\segmentTree1.jpg)
 
-<center><구간 최솟값을 구하는 세그먼트 트리의 예></center>
+<center>구간 최솟값을 구하는 세그먼트 트리의 예</center>
 
 구간의 최솟값을 구하는 세그먼트 트리는 먼저 구하고자 하는 배열을 완전 이진트리의 최하단에 위치시킨 후, 모든 부모 노드가 자식 노드들 중 작은 값을 가지게 하며 트리를 완성시킵니다.
 
@@ -57,7 +57,7 @@ comments: true
 
 ![segmentTree6](..\assets\post_img\segmentTree6.jpg)
 
-<center><배열로 구현된 1-based 이진트리의 구조></center>
+<center>배열로 구현된 1-based 이진트리의 구조</center>
 
 배열로 구현된 1-based 세그먼트 트리에 대해 l과 r을 이용하여 답을 구하는 방법은 다음과 같습니다.
 세그먼트 트리는 완전 이진트리이기 때문에 위와 같은 구조를 가짐을 참고합니다.
