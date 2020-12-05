@@ -4,7 +4,7 @@ title: 언어 별 특징
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: 안드로이드
+tags: 프로그래밍언어, c, c++, java, c#, python, ruby, php, javascript, css, html, xml, ajax
 categories : Language 
 comments: true
 
