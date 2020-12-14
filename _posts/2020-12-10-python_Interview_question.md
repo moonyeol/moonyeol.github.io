@@ -7,10 +7,7 @@ gh-badge: [star, fork, follow]
 tags: 프로그래밍언어, python
 categories : Language 
 comments: true
-
 ---
-
-​    
 
 1. 컴파일 언어와 인터프리터 언어의 차이점에 대해 설명하세요.
 
