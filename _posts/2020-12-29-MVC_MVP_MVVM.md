@@ -39,7 +39,7 @@ MVC 패턴은 Model + View + Controller를 합친 용어입니다. MVC 패턴의
 
 
 
-![MVC](https://blog.kakaocdn.net/dn/7IE8f/btqBRvw9sFF/AGLRdsOLuvNZ9okmGOlkx1/img.png)
+![MVC](..\assets\post_img\mvc.png)
 
 MVC는 Model + View + Controller를 말합니다.
 
@@ -86,7 +86,7 @@ MVP 패턴은 Model + View + Presenter를 합친 용어입니다. Model과 View�
 
 
 
-![MVP](https://blog.kakaocdn.net/dn/clZlsT/btqBTLzeUCL/IDA8Ga6Yarndgr88g9Nkhk/img.png)MVP는 Model + View + Presenter를 말합니다.
+![MVP](..\assets\post_img\mvp.png)MVP는 Model + View + Presenter를 말합니다.
 
 
 
@@ -127,7 +127,7 @@ MVVM 패턴은 Model + View + View Model를 합친 용어입니다. Model과 Vie
 
 
 
-![MVVM](https://blog.kakaocdn.net/dn/CiXz0/btqBQ1iMiVT/staXr7UO95opKgXEU01EY0/img.png)MVVM는 Model + View + View Model를 말합니다.
+![MVVM](..\assets\post_img\mvvm.png)MVVM는 Model + View + View Model를 말합니다.
 
 
 
